@@ -58,21 +58,18 @@
         .app-icon {
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, #2c5530, #4a7c59);
-            border-radius: 18px;
+            border-radius: 18px; /* iOS-style rounded corners */
             margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 2.5em;
-            font-weight: bold;
+            display: block; /* Center the image */
+            object-fit: cover; /* Maintain aspect ratio */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Subtle shadow for depth */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="app-icon">🏔️</div>
+        <!-- App icon using your BaggerIconDark.png file -->
+        <img src="BaggerIconDark.png" alt="Bagger: Wainwrights App Icon" class="app-icon">
         
         <h1>Bagger: Wainwrights</h1>
         <p class="subtitle">Support & Help for 'Bagger: Wainwrights' the Lake District Fell Bagging App</p>
